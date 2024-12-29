@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "X Recommend Block",
+  "version": "1.0",
+  "description": "おすすめを使えなくする",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/home*"],
+      "js": [
+          "content.js"
+      ]
+    }
+  ]
+}
+  
